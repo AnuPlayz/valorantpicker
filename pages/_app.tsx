@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
         disableTransitionOnChange
       >
         <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+          <meta name="viewport" content="width=1024"/>
         </Head>
         <Component {...pageProps} />
       </ThemeProvider>
