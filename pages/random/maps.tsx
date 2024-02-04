@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Head from "next/head";
+import GitHubButton from "react-github-btn";
 
 export default function Maps() {
     const [maps, setMap] = useState<any>(null);
@@ -19,8 +20,8 @@ export default function Maps() {
                 setMap(data);
                 setTimeout(() => setLoading(false), 500); // Delay for 0.5 seconds
             });
-            
-            
+
+
     };
 
     useEffect(() => {
@@ -59,6 +60,7 @@ export default function Maps() {
                     </>
                 )}
             </div>
+            <GitHubButton href="https://github.com/AnuPlayz/valorantpicker" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star AnuPlayz/valorantpicker on GitHub">Star</GitHubButton>
         </main>
     );
 }
