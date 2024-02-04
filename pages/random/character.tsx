@@ -27,7 +27,7 @@ export default function Character() {
             className={`flex flex-col items-center justify-between p-10 ${inter.className}`}
         >
             <Navbar />
-            <div className="flex flex-row items-center p-20">
+            <div className="flex flex-row items-center p-10">
                 <Button onClick={getRandomCharacter} className="m-10">Get Random Character</Button>
                 {character && (
                     <>
@@ -36,13 +36,13 @@ export default function Character() {
                                 {character.name}
                             </code>
                             <Card className="w-[250px]">
-                                <CardContent className="flex aspect-square items-center justify-center p-3">
+                                <CardContent className="flex aspect-square items-center justify-center p-5">
                                     <Image
                                         src={character.image}
                                         alt={character.name}
-                                        width={224}
-                                        height={299}
-                                        className="max-w-[250px] max-h-[300px]"
+                                        width={500}
+                                        height={300}
+                                        className="max-w-[500px] max-h-[400px]"
                                     />
                                 </CardContent>
                             </Card>
