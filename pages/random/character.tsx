@@ -5,6 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import Head from "next/head";
 
 export default function Character() {
     const [character, setCharacter] = useState<any>(null);
@@ -25,6 +26,9 @@ export default function Character() {
         <main
             className={`flex flex-col items-center justify-between p-10 ${inter.className}`}
         >
+            <Head>
+                <title>Random Character</title>
+            </Head>
             <Navbar />
             <div className="flex flex-row items-center p-10">
                 <Button onClick={getRandomCharacter} className="m-10">Get Random Character</Button>
