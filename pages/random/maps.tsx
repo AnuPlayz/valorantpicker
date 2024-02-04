@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import { Navbar } from "@/components/navbar";
-
+import { SkeletonCard } from "@/components/skeletonmaps";
 const inter = Inter({ subsets: ["latin"] });
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -9,17 +9,27 @@ import Head from "next/head";
 
 export default function Maps() {
     const [maps, setMap] = useState<any>(null);
+    const [loading, setLoading] = useState<boolean>(true);
 
     const getRandomMap = () => {
+        setLoading(true);
         fetch("/api/map")
             .then((response) => response.json())
-            .then((data) => setMap(data));
+            .then((data) => {
+                setMap(data);
+                setTimeout(() => setLoading(false), 500); // Delay for 0.5 seconds
+            });
+            
+            
     };
 
     useEffect(() => {
         fetch("/api/map")
             .then((response) => response.json())
-            .then((data) => setMap(data));
+            .then((data) => {
+                setMap(data)
+                setTimeout(() => setLoading(false), 500); // Delay for 0.5 seconds
+            });
     }, []);
 
     return (
@@ -32,7 +42,9 @@ export default function Maps() {
             <Navbar />
             <div className="flex flex-row items-center p-20">
                 <Button onClick={getRandomMap} className="m-10">Get Random Map</Button>
-                {maps && (
+                {loading ? (
+                    <SkeletonCard />
+                ) : (
                     <>
                         <div className="flex flex-col">
                             <h1 className="scroll-m-20 text-center p-5 text-4xl font-extrabold tracking-tight lg:text-5xl">
