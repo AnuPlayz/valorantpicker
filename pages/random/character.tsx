@@ -37,7 +37,13 @@ export default function Character() {
                             </code>
                             <Card className="w-[250px]">
                                 <CardContent className="flex aspect-square items-center justify-center p-3">
-                                    <Image src={character.image} alt={character.name} width={250} height={330} />
+                                    <Image
+                                        src={character.image}
+                                        alt={character.name}
+                                        width={224}
+                                        height={299}
+                                        className="max-w-[250px] max-h-[300px]"
+                                    />
                                 </CardContent>
                             </Card>
                         </div>
