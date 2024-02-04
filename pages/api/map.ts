@@ -12,43 +12,43 @@ export default function handler(
     const data = [
         {
             "name": "Ascent",
-            "image": require("/public/maps/Loading_Screen_Ascent.webp")
+            "image": "/maps/Loading_Screen_Ascent.webp"
         },
         {
             "name": "Bind",
-            "image": require("/public/maps/Loading_Screen_Bind.webp")
+            "image": "/maps/Loading_Screen_Bind.webp"
         },
         {
             "name": "Breeze",
-            "image": require("/public/maps/Loading_Screen_Breeze.webp")
+            "image": "/maps/Loading_Screen_Breeze.webp"
         },
         {
             "name": "Fracture",
-            "image": require("/public/maps/Loading_Screen_Fracture.webp")
+            "image": "/maps/Loading_Screen_Fracture.webp"
         },
         {
             "name": "Haven",
-            "image": require("/public/maps/Loading_Screen_Haven.webp")
+            "image": "/maps/Loading_Screen_Haven.webp"
         },
         {
             "name": "Icebox",
-            "image": require("/public/maps/Loading_Screen_Icebox.webp")
+            "image": "/maps/Loading_Screen_Icebox.webp"
         },
         {
             "name": "Lotus",
-            "image": require("/public/maps/Loading_Screen_Lotus.webp")
+            "image": "/maps/Loading_Screen_Lotus.webp"
         },
         {
             "name": "Pearl",
-            "image": require("/public/maps/Loading_Screen_Pearl.webp")
+            "image": "/maps/Loading_Screen_Pearl.webp"
         },
         {
             "name": "Split",
-            "image": require("/public/maps/Loading_Screen_Split.webp")
+            "image": "/maps/Loading_Screen_Split.webp"
         },
         {
             "name": "Sunset",
-            "image": require("/public/maps/Loading_Screen_Sunset.webp")
+            "image": "/maps/Loading_Screen_Sunset.webp"
         },
     ];
     let randomIndex = Math.floor(Math.random() * data.length);

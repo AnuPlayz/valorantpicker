@@ -5,7 +5,6 @@ const inter = Inter({ subsets: ["latin"] });
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import Image from "next/image";
 
 export default function Character() {
     const [character, setCharacter] = useState<any>(null);
@@ -37,7 +36,7 @@ export default function Character() {
                             </code>
                             <Card className="w-[250px]">
                                 <CardContent className="flex aspect-square items-center justify-center p-5">
-                                    <Image
+                                    <img
                                         src={character.image}
                                         alt={character.name}
                                         width={500}

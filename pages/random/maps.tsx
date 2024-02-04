@@ -5,7 +5,6 @@ const inter = Inter({ subsets: ["latin"] });
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import Image from "next/image";
 
 export default function Maps() {
     const [maps, setMap] = useState<any>(null);
@@ -37,7 +36,7 @@ export default function Maps() {
                         </h1>
                         <Card className="w-[450px]">
                             <CardContent className="flex items-center justify-center p-3">
-                            <Image src={maps.image} alt={maps.name} width={450} height={330} />
+                            <img src={maps.image} alt={maps.name} width={450} height={330} />
                             </CardContent>
                         </Card>
                         </div>

@@ -12,95 +12,95 @@ export default function handler(
     const data = [
         {
             "name": "Astra",
-            "image": require("/public/character/Astra_Artwork_Full.webp")
+            "image": "/character/Astra_Artwork_Full.webp"
         },
         {
             "name": "Breach",
-            "image": require("/public/character/Breach_Artwork_Full.webp")
+            "image": "/character/Breach_Artwork_Full.webp"
         },
         {
             "name": "Brimstone",
-            "image": require("/public/character/Brimstone_Artwork.webp")
+            "image": "/character/Brimstone_Artwork.webp"
         },
         {
             "name": "Chamber",
-            "image": require("/public/character/Chamber_Artwork.webp")
+            "image": "/character/Chamber_Artwork.webp"
         },
         {
             "name": "Cypher",
-            "image": require("/public/character/Cypher_Artwork.webp")
+            "image": "/character/Cypher_Artwork.webp"
         },
         {
             "name": "Deadlock",
-            "image": require("/public/character/Deadlock_Artwork.webp")
+            "image": "/character/Deadlock_Artwork.webp"
         },
         {
             "name": "Fade",
-            "image": require("/public/character/Fade_Artwork.webp")
+            "image": "/character/Fade_Artwork.webp"
         },
         {
             "name": "Gekko",
-            "image": require("/public/character/Gekko_Artwork.webp")
+            "image": "/character/Gekko_Artwork.webp"
         },
         {
             "name": "Harbor",
-            "image": require("/public/character/Harbor_Artwork.webp")
+            "image": "/character/Harbor_Artwork.webp"
         },
         {
             "name": "Iso",
-            "image": require("/public/character/Iso_Artwork.webp")
+            "image": "/character/Iso_Artwork.webp"
         },
         {
             "name": "Jett",
-            "image": require("/public/character/Jett_Artwork.webp")
+            "image": "/character/Jett_Artwork.webp"
         },
         {
             "name": "Kayo",
-            "image": require("/public/character/KAYO_Artwork.webp")
+            "image": "/character/KAYO_Artwork.webp"
         },
         {
             "name": "Killjoy",
-            "image": require("/public/character/Killjoy_Artwork.webp")
+            "image": "/character/Killjoy_Artwork.webp"
         },
         {
             "name": "Neon",
-            "image": require("/public/character/Neon_Artwork.webp")
+            "image": "/character/Neon_Artwork.webp"
         },
         {
             "name": "Omen",
-            "image": require("/public/character/Omen_Artwork.webp")
+            "image": "/character/Omen_Artwork.webp"
         },
         {
             "name": "Phoenix",
-            "image": require("/public/character/Phoenix_Artwork.webp")
+            "image": "/character/Phoenix_Artwork.webp"
         },
         {
             "name": "Raze",
-            "image": require("/public/character/Raze_Artwork.webp")
+            "image": "/character/Raze_Artwork.webp"
         },
         {
             "name": "Reyna",
-            "image": require("/public/character/Reyna_Artwork.webp")
+            "image": "/character/Reyna_Artwork.webp"
         },
         {
             "name": "Sage",
-            "image": require("/public/character/Sage_Artwork.webp")
+            "image": "/character/Sage_Artwork.webp"
         },
         {
             "name": "Skye",
-            "image": require("/public/character/Skye_Artwork.webp")
+            "image": "/character/Skye_Artwork.webp"
         },
         {
             "name": "Sova",
-            "image": require("/public/character/Sova_Artwork.webp")
+            "image": "/character/Sova_Artwork.webp"
         },
         {
             "name": "Viper",
-            "image": require("/public/character/Viper_Artwork.webp")
+            "image": "/character/Viper_Artwork.webp"
         },
         {
             "name": "Yoru",
-            "image": require("/public/character/Yoru_Artwork.webp")
+            "image": "/character/Yoru_Artwork.webp"
         },
     ];
     const randomIndex = Math.floor(Math.random() * data.length);
