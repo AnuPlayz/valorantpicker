@@ -32,35 +32,35 @@ export default function handler(
         },
         {
             "name": "Brimstone",
-            "image": "brimstone_image_url"
+            "image": "https://i.pinimg.com/736x/12/00/ce/1200ce8beae6d301282b12cde5e1d93d.jpg"
         },
         {
             "name": "Omen",
-            "image": "omen_image_url"
+            "image": "https://i.pinimg.com/736x/12/00/ce/1200ce8beae6d301282b12cde5e1d93d.jpg"
         },
         {
             "name": "Viper",
-            "image": "viper_image_url"
+            "image": "https://i.pinimg.com/736x/12/00/ce/1200ce8beae6d301282b12cde5e1d93d.jpg"
         },
         {
             "name": "Breach",
-            "image": "breach_image_url"
+            "image": "https://i.pinimg.com/736x/12/00/ce/1200ce8beae6d301282b12cde5e1d93d.jpg"
         },
         {
             "name": "Raze",
-            "image": "raze_image_url"
+            "image": "https://i.pinimg.com/736x/12/00/ce/1200ce8beae6d301282b12cde5e1d93d.jpg"
         },
         {
             "name": "Reyna",
-            "image": "reyna_image_url"
+            "image": "https://i.pinimg.com/736x/12/00/ce/1200ce8beae6d301282b12cde5e1d93d.jpg"
         },
         {
             "name": "Killjoy",
-            "image": "killjoy_image_url"
+            "image": "https://i.pinimg.com/736x/12/00/ce/1200ce8beae6d301282b12cde5e1d93d.jpg"
         },
         {
             "name": "Skye",
-            "image": "skye_image_url"
+            "image": "https://i.pinimg.com/736x/12/00/ce/1200ce8beae6d301282b12cde5e1d93d.jpg"
         }
     ];
     const randomIndex = Math.floor(Math.random() * data.length);
