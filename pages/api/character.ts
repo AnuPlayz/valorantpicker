@@ -20,87 +20,87 @@ export default function handler(
         },
         {
             "name": "Brimstone",
-            "image": "/character/Brimstone_Artwork.webp"
+            "image": "/character/Brimstone_artwork.webp"
         },
         {
             "name": "Chamber",
-            "image": "/character/Chamber_Artwork.webp"
+            "image": "/character/Chamber_artwork.webp"
         },
         {
             "name": "Cypher",
-            "image": "/character/Cypher_Artwork.webp"
+            "image": "/character/Cypher_artwork.webp"
         },
         {
             "name": "Deadlock",
-            "image": "/character/Deadlock_Artwork.webp"
+            "image": "/character/Deadlock_artwork.webp"
         },
         {
             "name": "Fade",
-            "image": "/character/Fade_Artwork.webp"
+            "image": "/character/Fade_artwork.webp"
         },
         {
             "name": "Gekko",
-            "image": "/character/Gekko_Artwork.webp"
+            "image": "/character/Gekko_artwork.webp"
         },
         {
             "name": "Harbor",
-            "image": "/character/Harbor_Artwork.webp"
+            "image": "/character/Harbor_artwork.webp"
         },
         {
             "name": "Iso",
-            "image": "/character/Iso_Artwork.webp"
+            "image": "/character/Iso_artwork.webp"
         },
         {
             "name": "Jett",
-            "image": "/character/Jett_Artwork.webp"
+            "image": "/character/Jett_artwork.webp"
         },
         {
             "name": "Kayo",
-            "image": "/character/KAYO_Artwork.webp"
+            "image": "/character/KAYO_artwork.webp"
         },
         {
             "name": "Killjoy",
-            "image": "/character/Killjoy_Artwork.webp"
+            "image": "/character/Killjoy_artwork.webp"
         },
         {
             "name": "Neon",
-            "image": "/character/Neon_Artwork.webp"
+            "image": "/character/Neon_artwork.webp"
         },
         {
             "name": "Omen",
-            "image": "/character/Omen_Artwork.webp"
+            "image": "/character/Omen_artwork.webp"
         },
         {
             "name": "Phoenix",
-            "image": "/character/Phoenix_Artwork.webp"
+            "image": "/character/Phoenix_artwork.webp"
         },
         {
             "name": "Raze",
-            "image": "/character/Raze_Artwork.webp"
+            "image": "/character/Raze_artwork.webp"
         },
         {
             "name": "Reyna",
-            "image": "/character/Reyna_Artwork.webp"
+            "image": "/character/Reyna_artwork.webp"
         },
         {
             "name": "Sage",
-            "image": "/character/Sage_Artwork.webp"
+            "image": "/character/Sage_artwork.webp"
         },
         {
             "name": "Skye",
-            "image": "/character/Skye_Artwork.webp"
+            "image": "/character/Skye_artwork.webp"
         },
         {
             "name": "Sova",
-            "image": "/character/Sova_Artwork.webp"
+            "image": "/character/Sova_artwork.webp"
         },
         {
             "name": "Viper",
-            "image": "/character/Viper_Artwork.webp"
+            "image": "/character/Viper_artwork.webp"
         },
         {
             "name": "Yoru",
-            "image": "/character/Yoru_Artwork.webp"
+            "image": "/character/Yoru_artwork.webp"
         },
     ];
     const randomIndex = Math.floor(Math.random() * data.length);
