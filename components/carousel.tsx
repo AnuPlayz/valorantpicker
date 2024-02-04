@@ -1,5 +1,6 @@
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
 
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -26,7 +27,9 @@ export function Caro() {
             <div className="p-1">
               <Card>
                 <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <img
+                  <Image
+                    width={300}
+                    height={300}
                     src={getImagePath(index)}
                     alt={`${agent} Image`}
                     className="max-w-full max-h-full"

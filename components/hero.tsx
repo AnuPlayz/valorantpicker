@@ -10,8 +10,8 @@ export function Hero() {
                         Valorant Picker
                     </h2>
                     <blockquote className="mt-6 border-l-2 pl-6 italic">
-                        "After all," they said, "the best valorant random picker, so it's only fair that
-                        I should be the best."
+                    &quot;After all,&quot; they said, &quot;the best valorant random picker, so it&apos;s only fair that
+                        I should be the best.&quot;
                     </blockquote>
                     <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
                         <li>Cute Picker</li>
