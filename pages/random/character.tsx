@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import { Navbar } from "@/components/navbar";
+import { SkeletonCard } from "@/components/skeleton";
+
 
 const inter = Inter({ subsets: ["latin"] });
 import { useEffect, useState } from "react";
@@ -40,13 +42,18 @@ export default function Character() {
                             </code>
                             <Card className="w-[250px]">
                                 <CardContent className="flex aspect-square items-center justify-center p-5">
-                                    <img
-                                        src={character.image}
-                                        alt={character.name}
-                                        width={500}
-                                        height={300}
-                                        className="max-w-[500px] max-h-[400px]"
-                                    />
+                                    {character ? (
+                                        <img
+                                            src={character.image}
+                                            alt={character.name}
+                                            width={500}
+                                            height={300}
+                                            className="max-w-[500px] max-h-[400px]"
+                                        />
+                                    ) : (
+                                        <SkeletonCard/>
+                                    )}
+                                    
                                 </CardContent>
                             </Card>
                         </div>
