@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
       <main
-        className={`flex flex-col items-center justify-between p-10 ${inter.className} scrollbar-default`}
+        className={`flex flex-col items-center justify-between p-10 scrollbar-hide ${inter.className}`}
       >
         <Head>
           <title>Valorant Picker</title>

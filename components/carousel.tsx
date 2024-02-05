@@ -17,7 +17,6 @@ export function Caro() {
   const getImagePath = (index: number) => `/agents/${agents[index]}.jpg`;
 
   return (
-    <div className="scrollbar-default">
       <Carousel
         plugins={[plugin.current]}
         className="w-full max-w-xs"
@@ -42,6 +41,5 @@ export function Caro() {
           ))}
         </CarouselContent>
       </Carousel>
-    </div>
   );
 }

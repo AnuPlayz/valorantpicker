@@ -44,7 +44,6 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function Navbar() {
     return (
-        <div className="scrollbar-default">
             <NavigationMenu>
                 <NavigationMenuList>
                     <NavigationMenuItem>
@@ -107,7 +106,6 @@ export function Navbar() {
                     </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
-        </div>
     )
 }
 
