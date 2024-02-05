@@ -37,75 +37,77 @@ const components: { title: string; href: string; description: string }[] = [
     },
     {
         title: "Random",
-        href: "/random/god",
+        href: "/random/all",
         description: "Gives everything random! Maps, Character, Mode.",
     },
 ]
 
 export function Navbar() {
     return (
-        <NavigationMenu>
-            <NavigationMenuList>
-                <NavigationMenuItem>
-                    <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                        <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                            <li className="row-span-3">
-                                <NavigationMenuLink asChild>
-                                    <Link
-                                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                                        href="/"
-                                    >
-                                        <Icons.logo className="h-6 w-6" />
-                                        <div className="mb-2 mt-4 text-lg font-medium">
-                                            Valorant Picker
-                                        </div>
-                                        <p className="text-sm leading-tight text-muted-foreground">
-                                            Beautifully designed picker for valorant maps and characters.
-                                        </p>
-                                    </Link>
-                                </NavigationMenuLink>
-                            </li>
-                            <ListItem title="How to use">
-                                Just click on get random character button and it does magic~
-                            </ListItem>
-                            <ListItem title="Ease">
-                              Minimal UI and easy to use. 
-                            </ListItem>
-                            <ListItem title="Customization">
-                                Alot of options to choose from like maps and characters.
-                            </ListItem>
-                        </ul>
-                    </NavigationMenuContent>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                    <NavigationMenuTrigger>Features</NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                        <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                            {components.map((component) => (
-                                <ListItem
-                                    key={component.title}
-                                    title={component.title}
-                                    href={component.href}
-                                >
-                                    {component.description}
+        <div className="scrollbar-default">
+            <NavigationMenu>
+                <NavigationMenuList>
+                    <NavigationMenuItem>
+                        <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+                        <NavigationMenuContent>
+                            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                                <li className="row-span-3">
+                                    <NavigationMenuLink asChild>
+                                        <Link
+                                            className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                                            href="/"
+                                        >
+                                            <Icons.logo className="h-6 w-6" />
+                                            <div className="mb-2 mt-4 text-lg font-medium">
+                                                Valorant Picker
+                                            </div>
+                                            <p className="text-sm leading-tight text-muted-foreground">
+                                                Beautifully designed picker for valorant maps and characters.
+                                            </p>
+                                        </Link>
+                                    </NavigationMenuLink>
+                                </li>
+                                <ListItem title="How to use">
+                                    Just click on get random character button and it does magic~
                                 </ListItem>
-                            ))}
-                        </ul>
-                    </NavigationMenuContent>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                    <Link href="https://www.github.com/AnuPlayz/valorantpicker" legacyBehavior passHref>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            Source Code
-                        </NavigationMenuLink>
-                    </Link>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                            <ModeToggle />
-                </NavigationMenuItem>
-            </NavigationMenuList>
-        </NavigationMenu>
+                                <ListItem title="Ease">
+                                    Minimal UI and easy to use.
+                                </ListItem>
+                                <ListItem title="Customization">
+                                    Alot of options to choose from like maps and characters.
+                                </ListItem>
+                            </ul>
+                        </NavigationMenuContent>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem>
+                        <NavigationMenuTrigger>Features</NavigationMenuTrigger>
+                        <NavigationMenuContent>
+                            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                                {components.map((component) => (
+                                    <ListItem
+                                        key={component.title}
+                                        title={component.title}
+                                        href={component.href}
+                                    >
+                                        {component.description}
+                                    </ListItem>
+                                ))}
+                            </ul>
+                        </NavigationMenuContent>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem>
+                        <Link href="https://www.github.com/AnuPlayz/valorantpicker" legacyBehavior passHref>
+                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                Source Code
+                            </NavigationMenuLink>
+                        </Link>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem>
+                        <ModeToggle />
+                    </NavigationMenuItem>
+                </NavigationMenuList>
+            </NavigationMenu>
+        </div>
     )
 }
 
